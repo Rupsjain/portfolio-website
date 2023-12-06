@@ -1,0 +1,628 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  font-style: italic;
+}
+/* html{
+  font-size: 62.5%;
+  font-size: 100%;
+} */
+/*-------------------------------- Background theme ------------------------------*/
+.section-header {
+  background: #000000;
+  overflow: hidden;
+  z-index: -2;
+}
+.stars .star {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* z-index: 0; */
+  animation: animate 8s ease-in-out infinite, backgroundmove 16s linear infinite;
+}
+.stars .star.star1 {
+  animation-delay: 0s;
+  background: url(./images/star1.png);
+}
+.stars .star.star2 {
+  animation-delay: -1s;
+  background: url(./images/star2.png);
+}
+.stars .star.star3 {
+  animation-delay: -2s;
+  background: url(./images/star3.png);
+}
+.stars .star.star4 {
+  animation-delay: -3s;
+  background: url(./images/star4.png);
+}
+.stars .star.star5 {
+  animation-delay: -4s;
+  background: url(./images/star5.png);
+}
+.stars .star.star6 {
+  animation-delay: -5s;
+  background: url(./images/star6.png);
+}
+.stars .star.star7 {
+  animation-delay: -6s;
+  background: url(./images/star7.png);
+}
+.stars .star.star8 {
+  animation-delay: -7s;
+  background: url(./images/star8.png);
+}
+@keyframes animate {
+  0%,
+  20%,
+  40%,
+  60%,
+  80%,
+  100% {
+    opacity: 0;
+  }
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    opacity: 1;
+  }
+}
+@keyframes backgroundmove {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(2);
+  }
+}
+
+/*------------------------------------ header-------------------------------*/
+.section-header {
+  z-index: 10;
+  overflow: hidden;
+}
+.header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 100;
+}
+.logo img {
+  width: 8.5rem;
+  margin-left: 8rem;
+  margin-top: 0.5rem;
+  background: rgba(0, 0, 0, 0.1);
+}
+.header .icons {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  /* margin-left: 45rem; */
+  margin-top: -3rem;
+  margin-right: 8rem;
+  z-index: 11;
+}
+.icons a {
+  color: rgb(179, 176, 176);
+  font-size: 2rem;
+  padding: 0 1rem;
+}
+.icons a:hover {
+  transform: rotate(20deg);
+}
+.header button{
+  padding: 0.2rem 0.8rem;
+  background-color: rgb(179,176,176);
+  color: rgb(14, 13, 13);
+  border-radius: 4px;
+  font-size: 1rem;
+  margin-right: 25rem;
+  margin-top: -3rem;
+  position: relative;
+  z-index: 10;
+}
+.header button:hover{
+  transform: scale(1,1.5);
+  cursor: pointer;
+}
+/* .header .menu {
+  margin-top: -3rem;
+  margin-right: 8rem;
+  list-style: none;
+  display: flex;
+  font-size: 1.5rem;
+  font-weight: bold;
+  z-index: 11;
+}
+.menu li a {
+  padding: 0 2rem;
+  color: rgb(179, 176, 176);
+  text-decoration: none;
+}
+.menu li a:hover {
+  border-bottom: 1px solid rgb(179, 176, 176);
+} */
+/*----------------------------- h3 tag --------------------------------*/
+h3 {
+  color: rgb(179, 176, 176);
+  margin: 1.5rem 0 0 8rem;
+  max-width: 32rem;
+  font-size: 2rem;
+  padding: 1rem;
+  font-weight: bold;
+  border:0px solid rgb(179, 176, 176);
+  border-radius: 1.2rem;
+  box-shadow: rgba(153, 149, 149, 0.4) 0px 19px 38px, rgba(147, 144, 144, 0.22) 0px 15px 12px;
+}
+h3::first-letter {
+  font-size: 3rem;
+}
+
+/*--------------------------- para/image/icons -------------------------*/
+.para-icon {
+  display: flex;
+  align-items: center;
+  position: relative;
+  z-index: 10;
+}
+.para {
+  color: rgb(179, 176, 176);
+  margin-top: -8rem;
+  margin-left: 9rem;
+  line-height: 4.5rem;
+  font-size: 2rem;
+  font-weight: bold;
+  max-width: 0rem;
+  min-width: 26rem;
+}
+.images img {
+  width: 24rem;
+  height: 24rem;
+  margin-left: 18rem;
+  margin-top: -4rem;
+  animation: rotate 15s infinite linear;
+  transform-origin: center;
+}
+.para .text {
+  font-size: 3rem;
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/*------------------------------ Intro para -----------------------------*/
+p{
+  color:rgb(179, 176, 176);
+  margin-left: 9rem;
+  margin-top: -5rem;
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+/*----------------------------------mail------------------------------------ */
+.mail{
+  display: flex;
+}
+.mail i{
+  color: rgb(179, 176, 176);
+  margin-left: 9rem;
+  margin-top: 2rem;
+  font-size: 1.5rem;
+}
+.mail a{
+  color:rgb(179,176,176);
+  text-decoration: none;
+  margin-top: 2rem;
+  font-size: 1rem;
+  padding-left: 0.5rem;
+  cursor: pointer;
+  z-index: 2;
+}
+
+/*-------------------------------------contact number------------------------------- */
+.num{
+  display: flex;
+}
+.num i{
+  color: rgb(179, 176, 176);
+  margin-left: 9rem;
+  margin-top: 2rem;
+  font-size: 1.5rem;
+}
+.num a{
+  color:rgb(179,176,176);
+  text-decoration: none;
+  margin-top: 2rem;
+  font-size: 1rem;
+  padding-left: 0.5rem;
+  cursor: pointer;
+  z-index: 2;
+}
+
+/*-------------------------------skill img -------------------------------*/
+.skill-area{
+  display: flex;
+}
+.skill-area img{
+  width:32rem;
+  height: 24rem;
+  margin-top: 10rem;
+  margin-left: 5rem;
+  /* border-radius: 50%; */
+  animation:rotate 15s infinite linear;
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/*----------------------------- Skills ---------------------------------*/
+.skills{
+  color:rgb(179, 176, 176);
+  text-align: center;
+  margin-top: 7rem;
+  border: 0px solid rgb(179, 176, 176);
+  border-radius: 2rem;
+  width:45rem;
+  height: 35rem;
+  margin-left: 5rem;
+  box-shadow: rgba(153, 149, 149, 0.8) 0px 19px 38px, rgba(147, 144, 144, 0.22) 0px 15px 12px;
+}
+.skills h1{
+  font-size: 2rem;
+  margin-top: 1.5rem;  
+}
+.skills h4{
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+.skills ul li{
+  font-size: 1.7rem;
+  margin-top: 2rem;
+  text-align: left;
+  padding: 0 2rem;
+  list-style-type: none;
+}
+
+/*--------------------------- skill bar -------------------------------*/
+.bar{
+  background: rgb(68, 64, 64);
+  display: block;
+  height:1rem;
+  border-radius: 2rem;
+  overflow: hidden;
+}
+.bar span{
+  height: 1rem;
+  float: left;
+  background: linear-gradient(135deg, rgb(133, 121, 89)0%, rgb(161, 158, 158)100%);
+}  
+.html{
+  width: 80%;
+  animation: html 3x;
+}
+.css{
+  width: 70%;
+  animation: css 3x;
+}
+.bs{
+  width: 45%;
+  animation: bs 3x;
+}
+.js{
+  width: 75%;
+  animation: js 3x;
+}
+.react{
+  width: 65%;
+  animation: react 3x;
+}
+/* .redux{
+  width: 20%;
+  animation: redux 3x;
+} */
+@keyframes html{
+  0%{
+    width: 0%;
+  }
+  100%{
+    width: 80%;
+  }
+}
+@keyframes css{
+  0%{
+    width: 0%;
+  }
+  100%{
+    width: 70%;
+  }
+}
+@keyframes bs{
+  0%{
+    width: 0%;
+  }
+  100%{
+    width: 70%;
+  }
+}
+@keyframes js{
+  0%{
+    width: 0%;
+  }
+  100%{
+    width: 75%;
+  }
+}
+@keyframes react{
+  0%{
+    width: 0%;
+  }
+  100%{
+    width: 65%;
+  }
+}
+/* @keyframes redux{
+  0%{
+    width: 0%;
+  }
+  100%{
+    width: 40%;
+  }
+} */
+
+/*-----------------------------------project section--------------------------------------*/
+.projects{
+  margin-top: 3rem;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 10rem;
+}
+.project-section h1{
+  margin-top: 12rem;
+  color:rgb(179, 176, 176);
+  display: flex;
+  margin-left: 43rem;
+  font-size: 2rem;
+}
+.project-section img{
+  max-width: 15rem;
+  margin: 2rem 4.5rem;
+  height:20rem;
+}
+
+/*-----------------------------------project1---------------------------------*/
+.project1{
+  position: relative;
+  box-shadow: rgba(153, 149, 149, 0.8) 0px 19px 38px, rgba(147, 144, 144, 0.22) 0px 15px 12px;
+  margin-bottom: 4rem;
+  border-radius: 2rem;
+  z-index: 28;
+}
+.project1 h4{
+  color:rgb(179,176,176);
+  margin-left: 8.5rem;
+  margin-bottom: -1.5rem;
+}
+.project1 img{
+  width:24rem;
+  height: 12rem;
+  border-radius: 1rem;
+}
+.project1 a{
+  position: absolute;
+  bottom: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+.project1 button{
+  padding: 0.5rem 1rem;
+  background-color: #767272;
+  color: white;
+  border-radius: 1rem;
+  font-size: 1rem;
+}
+/* .project button:hover{
+  cursor: pointer;
+  transition: all 300ms ease;
+} */
+
+/*---------------------------------------project2-----------------------------------*/
+.project2{
+  position: relative;
+  margin-bottom: 4rem;
+  box-shadow: rgba(153, 149, 149, 0.8) 0px 19px 38px, rgba(147, 144, 144, 0.22) 0px 15px 12px;
+  border-radius: 2rem;
+
+}
+.project2 h4{
+  color:rgb(179,176,176);
+  margin-left: 9rem;
+  margin-bottom: -1.5rem;
+}
+.project2 img{
+  width:24rem;
+  height: 12rem;
+  border-radius: 1rem;
+}
+.project2 a{
+  position: absolute;
+  bottom: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+.project2 button{
+  padding: 0.5rem 1rem;
+  background-color: #767272;
+  color: white;
+  border-radius: 1rem;
+  font-size: 1rem;
+}
+
+/*---------------------------------------project3-----------------------------------*/
+.project3{
+  position: relative;
+  margin-bottom: 4rem;
+  box-shadow: rgba(153, 149, 149, 0.8) 0px 19px 38px, rgba(147, 144, 144, 0.22) 0px 15px 12px;
+  border-radius: 2rem;
+}
+.project3 h4{
+  color:rgb(179,176,176);
+  margin-left: 7rem;
+  margin-bottom: -1.5rem;
+}
+.project3 img{
+  width:24rem;
+  height: 12rem;
+  border-radius: 1rem;
+}
+.project3 a{
+  position: absolute;
+  bottom: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+.project3 button{
+  padding: 0.5rem 1rem;
+  background-color: #767272;
+  color: white;
+  border-radius: 1rem;
+  font-size: 1rem;
+}
+
+/*---------------------------------------project4-----------------------------------*/
+.project4{
+  position: relative;
+  margin-bottom: 4rem;
+  box-shadow: rgba(153, 149, 149, 0.8) 0px 19px 38px, rgba(147, 144, 144, 0.22) 0px 15px 12px;
+  border-radius: 2rem;
+}
+.project4 h4{
+  color:rgb(179,176,176);
+  margin-left: 8rem;
+  margin-bottom: -1.5rem;
+}
+.project4 img{
+  width:24rem;
+  height: 12rem;
+  border-radius: 1rem;
+}
+.project4 a{
+  position: absolute;
+  bottom: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+.project4 button{
+  padding: 0.5rem 1rem;
+  background-color: #767272;
+  color: white;
+  border-radius: 1rem;
+  font-size: 1rem;
+}
+
+/*---------------------------------------project5-----------------------------------*/
+.project5{
+  position: relative;
+  margin-bottom: 4rem;
+  box-shadow: rgba(153, 149, 149, 0.8) 0px 19px 38px, rgba(147, 144, 144, 0.22) 0px 15px 12px;
+  border-radius: 2rem;
+}
+.project5 h4{
+  color:rgb(179,176,176);
+  margin-left: 6rem;
+  margin-bottom: -1.5rem;
+}
+.project5 img{
+  width:24rem;
+  height: 12rem;
+  border-radius: 1rem;
+}
+.project5 a{
+  position: absolute;
+  bottom: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+.project5 button{
+  padding: 0.5rem 1rem;
+  background-color: #767272;
+  color: white;
+  border-radius: 1rem;
+  font-size: 1rem;
+}
+
+/*---------------------------------------project6-----------------------------------*/
+.project6{
+  position: relative;
+  margin-bottom: 4rem;
+  box-shadow: rgba(153, 149, 149, 0.8) 0px 19px 38px, rgba(147, 144, 144, 0.22) 0px 15px 12px;
+  border-radius: 2rem;
+}
+.project6 h4{
+  color:rgb(179,176,176);
+  margin-left: 8.5rem;
+  margin-bottom: -1.5rem;
+}
+.project6 img{
+  width:24rem;
+  height: 12rem;
+  border-radius: 1rem;
+}
+.project6 a{
+  position: absolute;
+  bottom: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+.project6 button{
+  padding: 0.5rem 1rem;
+  background-color: #767272;
+  color: white;
+  border-radius: 1rem;
+  font-size: 1rem;
+}
+/* -------------------------------------Footer--------------------------------- */
+.footer{
+  margin-top: 12rem;
+  color:rgb(179, 176, 176);
+  height:3rem;
+  text-align: center;
+}
+/*------------------------------------media query------------------------------------------*/
+@media(max-width:768px){
+  html{
+    font-size: 55%;
+  }
+}
+/* @media(max-width:475px){
+  html{
+    font-size: 45%;
+  }
+} */
+@media(max-width:586px){
+  html{
+    font-size: 45%;
+  }
+}
